@@ -5,7 +5,7 @@ open System.Data.SqlClient
 let data = new CsvProvider<"uber.csv", HasHeaders=false, IgnoreErrors=true, Schema="MedicaidId (string), Npi (string)">()
 
 [<Literal>]
-let ConnectionString = "Server=psm-srv-12;database=mmis;Trusted_Connection=true;MultipleActiveResultSets=true;"
+let ConnectionString = "Server=.;database=master;Trusted_Connection=true;MultipleActiveResultSets=true;"
 
 [<EntryPoint>]
 let main argv =
